@@ -15,5 +15,10 @@ describe('App Index', function() {
         var title = browser.getTitle();
         assert.equal(title, 'WebdriverIO at CircleCI');
     });
+    // this test should fail
+    it('should have title', function() {
+        var title = browser.getTitle();
+        assert.equal(title, 'wrong title');
+    });
   });
 });
